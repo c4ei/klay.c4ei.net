@@ -12,7 +12,7 @@ export const getMulticallAddress = () => {
   return addresses.mulltiCall[chainId]
 }
 export const getWbnbAddress = () => {
-  return addresses.wbnb[chainId]
+  return addresses.wklay[chainId]
 }
 export const getLotteryAddress = () => {
   return addresses.lottery[chainId]

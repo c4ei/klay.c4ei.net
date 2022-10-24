@@ -69,6 +69,7 @@ export interface FarmConfig {
   }
   depositUrl?: string
   image?: string
+  isDisplay?: string
 }
 
 export interface PoolConfig {
