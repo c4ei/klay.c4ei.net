@@ -52,9 +52,7 @@ export const useFarmUser = (pid) => {
   }
 }
 
-
 // Pools
-
 export const usePools = (account): Pool[] => {
   const { fastRefresh } = useRefresh()
   const dispatch = useDispatch()
@@ -74,18 +72,13 @@ export const usePoolFromPid = (sousId): Pool => {
 }
 
 // Prices
-
-export const usePriceBnbBusd = (): BigNumber => {
+export const usePriceKlayBusd = (): BigNumber => {
   const pid = 2 // BUSD-KLAY LP
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
 export const usePriceSawonBusd = (): BigNumber => {
-  // const pid = 1 // CAKE-KLAY LP
-  // const bnbPriceUSD = usePriceBnbBusd()
-  // const farm = useFarmFromPid(pid)
-  // return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
   const pid = 0; // SAWON-BUSD LP
   const farm = useFarmFromPid(pid);
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO;
@@ -101,7 +94,7 @@ export const useTotalValue = (): BigNumber => {
 
 export const useFarmsValue = () => {
   const farms = useFarms()
-  const bnbPrice = usePriceBnbBusd()
+  const bnbPrice = usePriceKlayBusd()
   const albaPrice = usePriceSawonBusd()
   let value = new BigNumber(0)
   for (let i = 0; i < farms.length; i++) {
@@ -110,7 +103,7 @@ export const useFarmsValue = () => {
       let val;
       if (farm.quoteTokenSymbol === QuoteToken.KLAY) {
         val = (bnbPrice.times(farm.lpTotalInQuoteToken))
-      } else if (farm.quoteTokenSymbol === QuoteToken.CAKE) { // TODO: should be updated with quiteToken.SAWON
+      } else if (farm.quoteTokenSymbol === QuoteToken.SAWON) { // TODO: should be updated with quiteToken.SAWON
         val = (albaPrice.times(farm.lpTotalInQuoteToken))
       } else {
         val = (farm.lpTotalInQuoteToken)
@@ -124,7 +117,7 @@ export const useFarmsValue = () => {
 
 export const useLaunchPoolValue = () => {
   const launchPools = useLaunchPools();
-  const bnbPrice = usePriceBnbBusd();
+  const bnbPrice = usePriceKlayBusd();
   const albaPrice = usePriceSawonBusd();
   let value = new BigNumber(0);
   launchPools.forEach(launchPool => {
