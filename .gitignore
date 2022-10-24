@@ -102,3 +102,14 @@ dist
 
 # TernJS port file
 .tern-port
+
+# sol_klay/
+build/
+remix-klay.zip
+sol_klay/
+swap.zip
+.env.development
+.env.production
+BUSD-2022-10-10.zip
+2022-10-12_klay.txt
+farm_icon_psd.zip
