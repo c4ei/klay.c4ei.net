@@ -36,17 +36,17 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
     isDisplay: 'N',
   },
-  {
-    pid: 3,
-    risk: 5,
-    isTokenOnly: true, // pools
-    lpSymbol: 'SAWON',
-    lpAddresses: { 8217: '0x98DcF542Dbd43c490d52e0DC58cCe686B4a430d6', }, // SAWON-BUSD LP swap.c4ei.net 8217
-    tokenSymbol: 'SAWON',
-    tokenAddresses: { 8217: '0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66', }, // SaWonToken
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-  },
+  // {
+  //   pid: 3,
+  //   risk: 5,
+  //   isTokenOnly: true, // pools
+  //   lpSymbol: 'SAWON',
+  //   lpAddresses: { 8217: '0x98DcF542Dbd43c490d52e0DC58cCe686B4a430d6', }, // SAWON-BUSD LP swap.c4ei.net 8217
+  //   tokenSymbol: 'SAWON',
+  //   tokenAddresses: { 8217: '0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66', }, // SaWonToken
+  //   quoteTokenSymbol: QuoteToken.BUSD,
+  //   quoteTokenAdresses: contracts.busd,
+  // },
   // {
   //   pid: 4,
   //   risk: 5,
