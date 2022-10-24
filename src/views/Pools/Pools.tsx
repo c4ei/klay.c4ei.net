@@ -25,7 +25,7 @@ import PoolCard from './components/PoolCard'
 import PoolTabButtons from './components/PoolTabButtons'
 import Divider from './components/Divider'
 
-const SAWON = new Token(ChainId.MAINNET, '0xbE1a79Ac31DE3f69C9643fBeC19ee54EFAA944a5', 18)
+const SAWON = new Token(ChainId.MAINNET, '0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66', 18)
 const KLAY = new Token(ChainId.MAINNET, '0xAb57000f39107eDE71441D54Aa53A22bdCE9F4B9', 18)
 
 const Pools: React.FC = () => {
@@ -219,13 +219,13 @@ const Pools: React.FC = () => {
     }
 
     const price = TokenPriceBNB(address, pool.tokenDecimals, pool.isLPReward, pool.isSlimeAMM)
-    if(pool.stakingTokenAddress !== "0xbE1a79Ac31DE3f69C9643fBeC19ee54EFAA944a5"){
+    if(pool.stakingTokenAddress !== "0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66"){
       stakePrice = StakeTokenPriceBNB(pool.stakingTokenAddress, 18, pool.isLPStake,pool.isSlimeAMM)
     }
 
     if (pool.isLPStake) {
       stakepriceBUSD = stakePrice
-    }  else if(pool.stakingTokenAddress === "0xbE1a79Ac31DE3f69C9643fBeC19ee54EFAA944a5"){
+    }  else if(pool.stakingTokenAddress === "0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66"){
       stakePrice = cakebusd.div(bnbPriceUSD);
       stakepriceBUSD= cakebusd;
     } else {

@@ -7,7 +7,7 @@ const pools: PoolConfig[] = [
     sousId: 1,
     tokenName: 'SAWON-KLAY LP',
     stakingTokenName: QuoteToken[SAWON],
-    stakingTokenAddress: '0xbE1a79Ac31DE3f69C9643fBeC19ee54EFAA944a5',
+    stakingTokenAddress: '0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66',
     contractAddress: {
       // 97: '0x26e67884Aa7b1a948A7aC6c6283468F8c2fa70dB',  //AlbaChefDeflacionaryDeposit : 0xB949337009c97298c06Acbb585058887d10Ba3f9
       8217: '0x26e67884Aa7b1a948A7aC6c6283468F8c2fa70dB',

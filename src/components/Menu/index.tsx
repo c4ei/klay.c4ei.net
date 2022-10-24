@@ -26,7 +26,7 @@ const Menu = (props) => {
         setLang={setSelectedLanguage}
         cakePriceUsd={cakePriceUsd.toNumber()}
         links={config}
-        priceLink="https://scope.klaytn.com/token/0xbE1a79Ac31DE3f69C9643fBeC19ee54EFAA944a5"
+        priceLink="https://scope.klaytn.com/token/0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66"
         {...props}
       />
     </>

@@ -73,11 +73,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'SAWON klay Scan',
-        href: 'https://scope.klaytn.com/token/0xbE1a79Ac31DE3f69C9643fBeC19ee54EFAA944a5',
+        href: 'https://scope.klaytn.com/token/0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66',
       }
       // ,{
       //   label: 'SAWON Price Graph',
-      //   href: 'https://dex.guru/token/0xbE1a79Ac31DE3f69C9643fBeC19ee54EFAA944a5-bsc',
+      //   href: 'https://dex.guru/token/0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66-bsc',
       // }
       // ,{
       //   label: 'TOFY BSC Scan',
