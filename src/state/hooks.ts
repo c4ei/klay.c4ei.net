@@ -94,7 +94,7 @@ export const useTotalValue = (): BigNumber => {
 
 export const useFarmsValue = () => {
   const farms = useFarms()
-  const bnbPrice = usePriceKlayBusd()
+  const klayPrice = usePriceKlayBusd()
   const albaPrice = usePriceSawonBusd()
   let value = new BigNumber(0)
   for (let i = 0; i < farms.length; i++) {
@@ -102,7 +102,7 @@ export const useFarmsValue = () => {
     if (farm.lpTotalInQuoteToken) {
       let val;
       if (farm.quoteTokenSymbol === QuoteToken.KLAY) {
-        val = (bnbPrice.times(farm.lpTotalInQuoteToken))
+        val = (klayPrice.times(farm.lpTotalInQuoteToken))
       } else if (farm.quoteTokenSymbol === QuoteToken.SAWON) { // TODO: should be updated with quiteToken.SAWON
         val = (albaPrice.times(farm.lpTotalInQuoteToken))
       } else {
