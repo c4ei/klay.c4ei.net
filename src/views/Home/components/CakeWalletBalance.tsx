@@ -3,7 +3,7 @@ import { Text } from '@pancakeswap-libs/uikit'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import useTokenBalance from 'hooks/useTokenBalance'
 import useI18n from 'hooks/useI18n'
-import { getAlbaAddress } from 'utils/addressHelpers'
+import { getSawonAddress } from 'utils/addressHelpers'
 import { getBalanceNumber } from 'utils/formatBalance'
 import CardValue from './CardValue'
 

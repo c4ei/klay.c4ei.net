@@ -4,7 +4,7 @@ export default {
     97: '',
   },
   masterChef: {
-    8217: '0x55aC08Ccc202057f3a6B5098285c9C95da3338bD', // MasterChef_Alba 
+    8217: '0x55aC08Ccc202057f3a6B5098285c9C95da3338bD', // MasterChef_Sawon 
     // 8217: '0x65D12FEAC942f8D89848D9d8306A2dD07d46344b', // MasterChef_V1
     97: '',
   },

@@ -81,7 +81,7 @@ export const usePriceBnbBusd = (): BigNumber => {
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
-export const usePriceAlbaBusd = (): BigNumber => {
+export const usePriceSawonBusd = (): BigNumber => {
   // const pid = 1 // CAKE-KLAY LP
   // const bnbPriceUSD = usePriceBnbBusd()
   // const farm = useFarmFromPid(pid)
@@ -102,7 +102,7 @@ export const useTotalValue = (): BigNumber => {
 export const useFarmsValue = () => {
   const farms = useFarms()
   const bnbPrice = usePriceBnbBusd()
-  const albaPrice = usePriceAlbaBusd()
+  const albaPrice = usePriceSawonBusd()
   let value = new BigNumber(0)
   for (let i = 0; i < farms.length; i++) {
     const farm = farms[i]
@@ -125,7 +125,7 @@ export const useFarmsValue = () => {
 export const useLaunchPoolValue = () => {
   const launchPools = useLaunchPools();
   const bnbPrice = usePriceBnbBusd();
-  const albaPrice = usePriceAlbaBusd();
+  const albaPrice = usePriceSawonBusd();
   let value = new BigNumber(0);
   launchPools.forEach(launchPool => {
     if (launchPool.stakingTokenAddress) {

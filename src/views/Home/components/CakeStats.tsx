@@ -5,9 +5,9 @@ import styled from 'styled-components'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
 import useI18n from 'hooks/useI18n'
-import { getAlbaAddress } from 'utils/addressHelpers'
+import { getSawonAddress } from 'utils/addressHelpers'
 import CardValue from './CardValue'
-import { useFarms, usePriceAlbaBusd } from '../../../state/hooks'
+import { useFarms, usePriceSawonBusd } from '../../../state/hooks'
 
 const StyledCakeStats = styled(Card)`
   margin-left: auto;
@@ -25,9 +25,9 @@ const Row = styled.div`
 const CakeStats = () => {
   const TranslateString = useI18n()
   const totalSupply = useTotalSupply()
-  const burnedBalance = useBurnedBalance(getAlbaAddress())
+  const burnedBalance = useBurnedBalance(getSawonAddress())
   const farms = useFarms();
-  const eggPrice = usePriceAlbaBusd();
+  const eggPrice = usePriceSawonBusd();
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
   const cakeSupply = getBalanceNumber(circSupply);
   const marketCap = eggPrice.times(circSupply);

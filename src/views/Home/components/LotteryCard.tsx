@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
 import { Heading, Card, CardBody, Button, useModal } from '@pancakeswap-libs/uikit'
-import { getAlbaAddress } from 'utils/addressHelpers'
+import { getSawonAddress } from 'utils/addressHelpers'
 import { getBalanceNumber } from 'utils/formatBalance'
 import useI18n from 'hooks/useI18n'
 import useGetLotteryHasDrawn from 'hooks/useGetLotteryHasDrawn'
@@ -46,7 +46,7 @@ const FarmedStakingCard = () => {
   const TranslateString = useI18n()
   const { claimAmount } = useTotalClaim()
   const { onMultiClaim } = useMultiClaimLottery()
-  const cakeBalance = useTokenBalance(getAlbaAddress())
+  const cakeBalance = useTokenBalance(getSawonAddress())
 
   const handleClaim = useCallback(async () => {
     try {

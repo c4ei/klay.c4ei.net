@@ -7,7 +7,7 @@ import { useLotteryAllowance } from 'hooks/useAllowance'
 import { useLotteryApprove } from 'hooks/useApprove'
 import useTickets from 'hooks/useTickets'
 import useTokenBalance from 'hooks/useTokenBalance'
-import { getAlbaAddress } from 'utils/addressHelpers'
+import { getSawonAddress } from 'utils/addressHelpers'
 import BuyTicketModal from './BuyTicketModal'
 import MyTicketsModal from './UserTicketsModal'
 import PurchaseWarningModal from './PurchaseWarningModal'
@@ -28,7 +28,7 @@ const TicketCard: React.FC = () => {
   const allowance = useLotteryAllowance()
   const { onApprove } = useLotteryApprove()
   const lotteryHasDrawn = useGetLotteryHasDrawn()
-  const cakeBalance = useTokenBalance(getAlbaAddress())
+  const cakeBalance = useTokenBalance(getSawonAddress())
 
   const tickets = useTickets()
   const ticketsLength = tickets.length

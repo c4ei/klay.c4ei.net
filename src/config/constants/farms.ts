@@ -27,7 +27,7 @@ const farms: FarmConfig[] = [
     risk: 3,
     lpSymbol: 'KLAY-CEIK LP',
     // lpAddresses: { 8217: '0x50e746edaa283365136ed86a4e5dfddc6cd3cf9e', }, // KlaySwap LP KLAY-CEIK 
-    lpAddresses: { 8217: '0xC2fF16cf1Dfc77cA025364e79192ED19c651eAb6', }, // AlbaDefi
+    lpAddresses: { 8217: '0xC2fF16cf1Dfc77cA025364e79192ED19c651eAb6', }, // SawonDefi
     tokenSymbol: 'CEIK',
     tokenAddresses: { 8217: '0x18814b01b5cc76f7043e10fd268cc4364df47da0', },
     quoteTokenSymbol: QuoteToken.KLAY,

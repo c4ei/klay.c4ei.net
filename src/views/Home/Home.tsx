@@ -68,7 +68,7 @@ const Home: React.FC = () => {
       {/* <Background src='images/background.png' alt='background' /> */}
       <Hero>
         <Heading as="h1" size="xl" mb="24px" color="secondary">
-          {/* {TranslateString(576, 'AlbaDeFi')} */}
+          {/* {TranslateString(576, 'SawonDeFi')} */}
           {/* <BannerImg src='images/banner.png' alt='banner' /> */}
           Klaytn(8217) only / <a href="https://farm.c4ei.net">go C4EI?</a>
         </Heading>

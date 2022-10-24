@@ -2,7 +2,7 @@
   {
     "inputs": [
       {
-        "internalType": "contract AlbaToken",
+        "internalType": "contract SawonToken",
         "name": "_alba",
         "type": "address"
       },
@@ -264,7 +264,7 @@
     "name": "sawon",
     "outputs": [
       {
-        "internalType": "contract AlbaToken",
+        "internalType": "contract SawonToken",
         "name": "",
         "type": "address"
       }
