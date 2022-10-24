@@ -11,7 +11,7 @@ export const getMasterChefAddress = () => {
 export const getMulticallAddress = () => {
   return addresses.mulltiCall[chainId]
 }
-export const getWbnbAddress = () => {
+export const getWklayAddress = () => {
   return addresses.wklay[chainId]
 }
 export const getLotteryAddress = () => {

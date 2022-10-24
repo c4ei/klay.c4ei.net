@@ -13,7 +13,7 @@ import lottery from 'config/abi/lottery.json'
 import lotteryTicket from 'config/abi/lotteryNft.json'
 import masterChef from 'config/abi/masterchef.json'
 import sousChef from 'config/abi/sousChef.json'
-import sousChefBnb from 'config/abi/sousChefBnb.json'
+import sousChefBnb from 'config/abi/sousChefKlay.json'
 
 const useContract = (abi: AbiItem, address: string, contractOptions?: ContractOptions) => {
   const web3 = useWeb3()
