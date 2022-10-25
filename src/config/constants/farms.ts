@@ -21,7 +21,7 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'SAWON',
     tokenAddresses: { 8217: '0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66', }, // SaWonToken
     quoteTokenSymbol: QuoteToken.KLAY,
-    quoteTokenAdresses: contracts.wbnb,
+    quoteTokenAdresses: contracts.wklay,
     image: 'sawon-klay',
     isDisplay: 'N',
   },
