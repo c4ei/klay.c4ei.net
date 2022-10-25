@@ -16,7 +16,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Liquidity',
-        href: 'https://swap.c4ei.net/swap?chainId=8217',
+        href: 'https://swap.c4ei.net/liquidity?chainId=8217',
       },
     ],
   },

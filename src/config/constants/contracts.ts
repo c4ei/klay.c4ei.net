@@ -8,7 +8,7 @@ export default {
     // 8217: '0x65D12FEAC942f8D89848D9d8306A2dD07d46344b', // MasterChef_V1
     97: '',
   },
-  wklay: { // WKLAY
+  wbnb: { // WKLAY
     8217: '0xAb57000f39107eDE71441D54Aa53A22bdCE9F4B9',
     97: '',
   },
