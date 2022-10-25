@@ -26,7 +26,7 @@ const farms: FarmConfig[] = [
     isDisplay: 'N',
   },
   {
-    pid: 2,
+    pid: 3,
     risk: 3,
     lpSymbol: 'KLAY-BUSD LP',
     lpAddresses: { 8217: '0x56016c4AD9dBd040e782CA9386B0Ba43684668BE', },
@@ -37,7 +37,7 @@ const farms: FarmConfig[] = [
     isDisplay: 'N',
   },
   // {
-  //   pid: 3,
+  //   pid: 4,
   //   risk: 5,
   //   isTokenOnly: true, // pools
   //   lpSymbol: 'SAWON',
@@ -48,7 +48,7 @@ const farms: FarmConfig[] = [
   //   quoteTokenAdresses: contracts.busd,
   // },
   // {
-  //   pid: 4,
+  //   pid: 5,
   //   risk: 5,
   //   isTokenOnly: true, // pools
   //   lpSymbol: 'KSLP(KLAY-SAWON) LP',
