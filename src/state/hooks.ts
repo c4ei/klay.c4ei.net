@@ -95,7 +95,7 @@ export const useTotalValue = (): BigNumber => {
 export const useFarmsValue = () => {
   const farms = useFarms()
   const klayPrice = usePriceKlayBusd()
-  const albaPrice = usePriceSawonBusd()
+  const sawonPrice = usePriceSawonBusd()
   let value = new BigNumber(0)
   for (let i = 0; i < farms.length; i++) {
     const farm = farms[i]
@@ -104,7 +104,7 @@ export const useFarmsValue = () => {
       if (farm.quoteTokenSymbol === QuoteToken.KLAY) {
         val = (klayPrice.times(farm.lpTotalInQuoteToken))
       } else if (farm.quoteTokenSymbol === QuoteToken.SAWON) { // TODO: should be updated with quiteToken.SAWON
-        val = (albaPrice.times(farm.lpTotalInQuoteToken))
+        val = (sawonPrice.times(farm.lpTotalInQuoteToken))
       } else {
         val = (farm.lpTotalInQuoteToken)
       }
@@ -118,13 +118,13 @@ export const useFarmsValue = () => {
 export const useLaunchPoolValue = () => {
   const launchPools = useLaunchPools();
   const bnbPrice = usePriceKlayBusd();
-  const albaPrice = usePriceSawonBusd();
+  const sawonPrice = usePriceSawonBusd();
   let value = new BigNumber(0);
   launchPools.forEach(launchPool => {
     if (launchPool.stakingTokenAddress) {
       let val;
       if (launchPool.stakingTokenName === QuoteToken.SAWON) {
-        val = albaPrice.times(launchPool.totalStaked).div(new BigNumber(10).pow(launchPool.tokenDecimals))
+        val = sawonPrice.times(launchPool.totalStaked).div(new BigNumber(10).pow(launchPool.tokenDecimals))
       } else if (launchPool.stakingTokenName === QuoteToken.KLAY) {
         val = bnbPrice.times(launchPool.totalStaked).div(new BigNumber(10).pow(launchPool.tokenDecimals))
       } else {

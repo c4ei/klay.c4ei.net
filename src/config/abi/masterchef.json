@@ -3,7 +3,7 @@
     "inputs": [
       {
         "internalType": "contract SawonToken",
-        "name": "_alba",
+        "name": "_sawon",
         "type": "address"
       },
       {
@@ -18,7 +18,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "_albaPerBlock",
+        "name": "_sawonPerBlock",
         "type": "uint256"
       },
       {
@@ -274,7 +274,7 @@
   },
   {
     "inputs": [],
-    "name": "albaPerBlock",
+    "name": "sawonPerBlock",
     "outputs": [
       {
         "internalType": "uint256",
@@ -472,7 +472,7 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_albaPerBlock",
+        "name": "_sawonPerBlock",
         "type": "uint256"
       }
     ],
