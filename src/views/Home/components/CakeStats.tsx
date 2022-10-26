@@ -27,10 +27,10 @@ const CakeStats = () => {
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getSawonAddress())
   const farms = useFarms();
-  const eggPrice = usePriceSawonBusd();
+  const sawonPrice = usePriceSawonBusd();
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
   const cakeSupply = getBalanceNumber(circSupply);
-  const marketCap = eggPrice.times(circSupply);
+  const marketCap = sawonPrice.times(circSupply);
 
   let sawonPerBlock = 0;
   if(farms && farms[0] && farms[0].sawonPerBlock){
@@ -41,7 +41,7 @@ const CakeStats = () => {
     <StyledCakeStats>
       <CardBody>
         <Heading size="xl" mb="40px">
-          {TranslateString(534, 'Egg Stats')}
+          {TranslateString(534, 'Sawon Stats')}
         </Heading>
         <Row>
           <Text fontSize="20px">{TranslateString(536, 'Total SAWON Supply')}</Text>
@@ -56,7 +56,7 @@ const CakeStats = () => {
           <CardValue fontSize="20px" value={getBalanceNumber(burnedBalance)} decimals={0} />
         </Row>
         <Row>
-          <Text fontSize="20px">{TranslateString(540, 'New EGG/block')}</Text>
+          <Text fontSize="20px">{TranslateString(540, 'New SAWON/block')}</Text>
           <Text bold fontSize="20px">{sawonPerBlock}</Text>
         </Row>
       </CardBody>

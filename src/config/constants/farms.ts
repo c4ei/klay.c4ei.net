@@ -59,6 +59,22 @@ const farms: FarmConfig[] = [
   //   quoteTokenAdresses: contracts.sawon,
   //   image: 'kslp'
   // },
+  // ================== pools ==================
+  // KlaySwap LP KLAY-CEIK 
+  // lpAddresses: { 8217: '0x50e746edaa283365136ed86a4e5dfddc6cd3cf9e', },
+  {
+    pid: 3,
+    risk: 3,
+    isTokenOnly: true, // pools
+  //   lpSymbol: 'ALBA',
+    lpSymbol: 'KSLP(KLAY-CEIK) LP',
+    lpAddresses: { 8217: '0x50e746edaa283365136ed86a4e5dfddc6cd3cf9e', }, // KlaySwap LP KLAY-CEIK 
+    tokenSymbol: 'KSLP',
+    tokenAddresses: { 8217: '0x50e746edaa283365136ed86a4e5dfddc6cd3cf9e', }, // 
+    quoteTokenSymbol: QuoteToken.SAWON,
+    quoteTokenAdresses: contracts.sawon,
+  },
+
 ]
 
 export default farms

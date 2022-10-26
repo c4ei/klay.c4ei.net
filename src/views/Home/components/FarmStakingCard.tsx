@@ -45,7 +45,7 @@ const FarmedStakingCard = () => {
   const TranslateString = useI18n()
   const farmsWithBalance = useFarmsWithBalance()
   const cakeBalance = getBalanceNumber(useTokenBalance(getSawonAddress()))
-  const eggPrice = usePriceSawonBusd().toNumber()
+  const sawonPrice = usePriceSawonBusd().toNumber()
   const earningsSum = farmsWithBalance.reduce((accum, farm) => {
     return accum + new BigNumber(farm.balance).div(new BigNumber(10).pow(18)).toNumber()
   }, 0)
@@ -74,12 +74,12 @@ const FarmedStakingCard = () => {
         <Block>
           <Label>{TranslateString(544, 'SAWON to Harvest')}</Label>
           <CakeHarvestBalance earningsSum={earningsSum}/>
-          <Label>~${(eggPrice * earningsSum).toFixed(2)}</Label>
+          <Label>~${(sawonPrice * earningsSum).toFixed(2)}</Label>
         </Block>
         <Block>
           <Label>{TranslateString(546, 'SAWON in Wallet')}</Label>
           <CakeWalletBalance cakeBalance={cakeBalance} />
-          <Label>~${(eggPrice * cakeBalance).toFixed(2)}</Label>
+          <Label>~${(sawonPrice * cakeBalance).toFixed(2)}</Label>
         </Block>
         <Actions>
           {account ? (
@@ -90,7 +90,7 @@ const FarmedStakingCard = () => {
               fullWidth
             >
               {pendingTx
-                ? TranslateString(548, 'Collecting EGG')
+                ? TranslateString(548, 'Collecting SAWON')
                 : TranslateString(999, `Harvest all (${balancesWithValue.length})`)}
             </Button>
           ) : (
