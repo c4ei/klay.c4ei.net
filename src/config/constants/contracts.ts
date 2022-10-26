@@ -4,7 +4,7 @@ export default {
     97: '',
   },
   masterChef: {
-    8217: '0x94Aec8C232CDD71E31EE50196CaA9960bc2aa7Cf', // MasterChef_Sawon 
+    8217: '0xbC285ADb0521a309dABEb6f235e4Fa0Ca1b875EF', // MasterChef_Sawon  0x2208f42Be95A0fD9D029713C1015C6fbF2A88A5F
     // 8217: '0x65D12FEAC942f8D89848D9d8306A2dD07d46344b', // MasterChef_V1
     97: '',
   },
@@ -21,7 +21,7 @@ export default {
     97: '',
   },
   mulltiCall: {
-    8217: '0x8B1E3726cF47A290fC5782c22dd6F15585EE363B', // 0xCcAB022EB3F46679018bFd049852315BC9e6947F
+    8217: '0xCcAB022EB3F46679018bFd049852315BC9e6947F', // 0x8B1E3726cF47A290fC5782c22dd6F15585EE363B 
     97: '',
   },
   busd: {
@@ -36,25 +36,4 @@ export default {
     8217: '0x18814b01b5cc76f7043e10fd268cc4364df47da0',
     97: '',
   },
-  // ,
-  // btcb: {
-  //   8217: '0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c',
-  //   97: '',
-  // },
-  // vault: {
-  //   8217: '0xd456be0ff7007b3d8ad656136487a23e771f5762',
-  //   97: '',
-  // },
-  // plum: {
-  //   8217: '0xdE8eD8c9480EA12D050182AA99630B235dE30f83',
-  //   97: '',
-  // },
-  // slime: {
-  //   8217: '0x23b06097F8FE2DD9D3dF094D3ee8319Daa8756c1',
-  //   97: '',
-  // },
-  // tako: {
-  //   8217: '0x2F3391AeBE27393aBa0a790aa5E1577fEA0361c2',
-  //   97: ''
-  // }
 }

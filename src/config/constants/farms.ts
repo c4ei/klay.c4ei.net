@@ -26,7 +26,7 @@ const farms: FarmConfig[] = [
     isDisplay: 'N',
   },
   {
-    pid: 3,
+    pid: 2,
     risk: 3,
     lpSymbol: 'KLAY-BUSD LP',
     lpAddresses: { 8217: '0x56016c4AD9dBd040e782CA9386B0Ba43684668BE', },

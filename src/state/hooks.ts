@@ -73,7 +73,7 @@ export const usePoolFromPid = (sousId): Pool => {
 
 // Prices
 export const usePriceKlayBusd = (): BigNumber => {
-  const pid = 3 // BUSD-KLAY LP --> 2
+  const pid = 2 // BUSD-KLAY LP --> 2
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
@@ -100,15 +100,15 @@ export const useFarmsValue = () => {
   for (let i = 0; i < farms.length; i++) {
     const farm = farms[i]
     if (farm.lpTotalInQuoteToken) {
-      let valu;
+      let val;
       if (farm.quoteTokenSymbol === QuoteToken.KLAY) {
-        valu = (klayPrice.times(farm.lpTotalInQuoteToken))
+        val = (klayPrice.times(farm.lpTotalInQuoteToken))
       } else if (farm.quoteTokenSymbol === QuoteToken.SAWON) { // TODO: should be updated with quiteToken.SAWON
-        valu = (sawonPrice.times(farm.lpTotalInQuoteToken))
+        val = (sawonPrice.times(farm.lpTotalInQuoteToken))
       } else {
-        valu = (farm.lpTotalInQuoteToken)
+        val = (farm.lpTotalInQuoteToken)
       }
-      value = value.plus(valu)
+      value = value.plus(val)
     }
   }
 
