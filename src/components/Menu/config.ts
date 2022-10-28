@@ -1,4 +1,5 @@
 import { MenuEntry } from '@pancakeswap-libs/uikit'
+import { Target } from 'react-feather'
 
 const config: MenuEntry[] = [
   {
@@ -50,7 +51,11 @@ const config: MenuEntry[] = [
       },
       {
         label: "Telegram",
-        href: "https://t.me/c4eiAirdrop"
+        href: "https://t.me/c4eiAirdrop",
+      },
+      {
+        label: "설명서",
+        href: "https://docs.google.com/document/d/1qT76SW6ft_nKA7guj16Ty_veOo-s2vI_0KNB2OP3ugc/edit?usp=sharing",
       },
     ],
   },
