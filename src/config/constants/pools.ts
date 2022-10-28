@@ -5,6 +5,31 @@ const SAWON = 'SAWON';
 
 const pools: PoolConfig[] = [
   // {
+  //   sousId: 8,
+  //   tokenName: 'SAWON LP',
+  //   stakingTokenName: QuoteToken[SAWON],
+  //   stakingTokenAddress: '0x787732f27d18495494cea3792ed7946bbcff8db2',
+  //   contractAddress: {
+  //     // 97: '',
+  //     8217: '0xab76B5DA1af1C8091B8B8C87533627BB94D2FE36',
+  //   },
+  //   poolCategory: PoolCategory.CORE,
+  //   projectLink: 'https://app.slime.finance/',
+  //   harvest: true,
+  //   isFinished: false,
+  //   tokenPerBlock: '0.000856329483621793',
+  //   sortOrder: 1,
+  //   tokenDecimals: 18,
+  //   startBlock: 7323438,
+  //   endBlock: 7525038,
+  //   withBurnFee:true,
+  //   isLPStake:false,
+  //   isLPReward:true,
+  //   burnFee:0,
+  //   slimeRounding:5,
+  //   image: 'mash-slime'
+  // },
+  // {
   //   sousId: 1,
   //   tokenName: 'ALBA-KLAY LP',
   //   stakingTokenName: QuoteToken[ALBA],

@@ -4,7 +4,7 @@ import { FarmConfig, QuoteToken } from './types'
 const farms: FarmConfig[] = [
   {
     pid: 0,
-    risk: 3,
+    risk: 1,
     lpSymbol: 'SAWON-BUSD LP',
     lpAddresses: { 8217: '0x98DcF542Dbd43c490d52e0DC58cCe686B4a430d6', }, // SAWON-BUSD LP swap.c4ei.net 8217
     tokenSymbol: 'SAWON',
@@ -15,7 +15,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 1,
-    risk: 3,
+    risk: 2,
     lpSymbol: 'SAWON-KLAY LP',
     lpAddresses: { 8217: '0x10f0c0405fcCC73323C8061D2C96cE124917963e', }, // SAWON-KLAY LP swap.c4ei.net 8217
     tokenSymbol: 'SAWON',
@@ -27,7 +27,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 2,
-    risk: 3,
+    risk: 1,
     lpSymbol: 'KLAY-BUSD LP',
     lpAddresses: { 8217: '0x56016c4AD9dBd040e782CA9386B0Ba43684668BE', },
     tokenSymbol: 'KLAY',
@@ -64,7 +64,7 @@ const farms: FarmConfig[] = [
   // lpAddresses: { 8217: '0x50e746edaa283365136ed86a4e5dfddc6cd3cf9e', },
   {
     pid: 3,
-    risk: 3,
+    risk: 2,
     isTokenOnly: true, // pools
   //   lpSymbol: 'ALBA',
     lpSymbol: 'KSLP(KLAY-CEIK) LP',
