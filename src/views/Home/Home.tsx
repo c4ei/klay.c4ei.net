@@ -70,7 +70,9 @@ const Home: React.FC = () => {
         <Heading as="h1" size="xl" mb="24px" color="secondary">
           {/* {TranslateString(576, 'SawonDeFi')} */}
           {/* <BannerImg src='images/banner.png' alt='banner' /> */}
-          Klaytn(8217) only / <a href="https://farm.c4ei.net">go C4EI?</a>
+          Klaytn(8217) only / <a href="https://farm.c4ei.net">C4EI</a>
+          / <a href="https://poly.c4ei.net">Polygon</a>
+          / <a href="https://bnb.c4ei.net">BSC(binance)</a>
         </Heading>
         {/* <Text>The sweetest and softest yield farm on the KLAY!</Text> */}
       </Hero>
